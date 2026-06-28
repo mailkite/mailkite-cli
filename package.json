@@ -1,0 +1,39 @@
+{
+  "name": "@mailkite/cli",
+  "version": "0.10.0",
+  "description": "MailKite command-line client — sign in, add domains, set DNS + webhooks, send mail, and tail inbound messages from your terminal. Built on the MailKite Node SDK.",
+  "type": "module",
+  "bin": {
+    "mailkite": "cli.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mailkite",
+    "email",
+    "cli",
+    "transactional",
+    "webhook",
+    "dns"
+  ],
+  "homepage": "https://mailkite.dev/docs/cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mailkite/mailkite-cli.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mailkite": "file:../node"
+  }
+}
